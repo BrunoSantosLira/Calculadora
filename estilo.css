@@ -2,24 +2,32 @@
     margin: 0;
     font-family: sans-serif;
 }
-
+body {
+    background: linear-gradient(
+    90deg,    
+    rgb(34, 121, 34) 30%,
+    #221133 80%)
+}
 
 article {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     margin-top: 100px;
-    background-color: rgb(126, 4, 4);
-    width: 200px;
-    height: 275px;
+    background-color: rgb(15, 65, 14);
+    width: 320px;
+    height: 375px;
     flex-direction: column;
     border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px;
+    padding: 10px;
+    
 }
 
 h1{
     color: rgb(255, 255, 255);
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 input{
@@ -34,16 +42,32 @@ input{
 
 section{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 button{
     background-color: black;
     font-size: 20px;
+    height: 40px;
     width: 100%;
     color: white;
+
+    font-size: 20px;
+    border: 2px solid rgb(7, 240, 209);
+    color: rgb(7, 240, 209);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
+
+
 button:hover{
-    background-color: gray;
+    box-shadow: 0 0 15px #07f0d1, inset 0 0 15px #07f0d1;
+    text-shadow: 0 0 15px #07f0d1;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
 }

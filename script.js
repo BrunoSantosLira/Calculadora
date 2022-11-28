@@ -4,7 +4,7 @@ var res = window.document.getElementById('numero')
 //FIM
 res.value = 0
 var numeros = []
-
+var contador =1
 //sinais
 var somando =false
 var subtraindo =false
@@ -119,6 +119,32 @@ function excluir_ultimo(){
     
     
 }
+
+
+function parênteses(){
+    var res= window.document.getElementById('numero')
+    if (res.value == 0){
+        if (contador == 1){
+            res.value = "("
+            contador +=1
+        }
+         else if (contador == 2){
+            res.value +=")"
+            contador = 1
+        }
+    }
+    else{
+        if (contador == 1){
+            res.value += "("
+            contador +=1
+        }
+        else if (contador == 2){
+            res.value +=")"
+            contador = 1
+        }
+    }
+}
+
 
 function número0(){
     var res = window.document.getElementById('numero')
