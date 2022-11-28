@@ -3,10 +3,7 @@
     font-family: sans-serif;
 }
 body {
-    background: linear-gradient(
-    90deg,    
-    rgb(34, 121, 34) 30%,
-    #221133 80%)
+    background-color: #221133;
 }
 
 article {
